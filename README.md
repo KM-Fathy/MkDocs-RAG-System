@@ -11,6 +11,13 @@ A "Retrieval-Augmented Generation" (RAG) AI application that answers technical q
 * **Streamlit GUI**: A clean, chat-based web interface with history.
 * **Persistent Database**: Uses ChromaDB to store embeddings locally, so you only need to process data once.
 
+## 📸 Demo
+<div align="center">
+<img width="644" height="833" alt="Demo" src="https://github.com/user-attachments/assets/95b72c75-e7fa-423a-82e6-aaad5bf9cc8b" />
+
+*(The AI explains how to change themes and deploy to GitHub Pages using local context)*
+</div>
+
 ## 📂 Project Structure
 
 | File / Folder | Description |
