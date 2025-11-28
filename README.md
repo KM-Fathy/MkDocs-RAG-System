@@ -56,7 +56,7 @@ Before running the app, you must process the documentation and populate the data
 3.  *Result:* A folder named `mkdocs_db` will be created.
 
 ### Step 2: Run the Application
-Launch the web interface:
+Launch the web interface using the following command in your terminal:
 
 ```bash
-python app.py
+streamlit run app.py
