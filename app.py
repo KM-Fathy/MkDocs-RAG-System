@@ -1,0 +1,29 @@
+import streamlit as st
+from RAG import generate_answer 
+
+st.set_page_config(page_title="MkDocs AI", page_icon="🤖")
+st.title("🤖 MkDocs AI Assistant")
+
+
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
+
+if prompt := st.chat_input("Ask a question about MkDocs..."):
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    with st.chat_message("user"):
+        st.markdown(prompt)
+
+    with st.chat_message("assistant"):
+        with st.spinner("Thinking..."):
+            response = generate_answer(prompt)
+            st.markdown(response)
+            
+            st.session_state.messages.append({"role": "assistant", "content": response})
+            
+#To run it use (streamlit run app.py) in terminal
+#To close the run use (Ctrt + C) in the terminal

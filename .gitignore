@@ -1,0 +1,12 @@
+.env
+
+
+mkdocs_db/
+
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+
+.DS_Store

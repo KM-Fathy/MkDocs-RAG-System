@@ -1,0 +1,6 @@
+python-dotenv
+google-generativeai
+chromadb
+langchain-text-splitters
+tqdm
+streamlit
